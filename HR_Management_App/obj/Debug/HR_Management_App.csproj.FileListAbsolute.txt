@@ -10,3 +10,8 @@ C:\Users\Igor_\source\repos\HR_Management_App\HR_Management_App\obj\Debug\HR_Man
 C:\Users\Igor_\source\repos\HR_Management_App\HR_Management_App\obj\Debug\HR_Management_App.exe
 C:\Users\Igor_\source\repos\HR_Management_App\HR_Management_App\obj\Debug\HR_Management_App.pdb
 C:\Users\Igor_\source\repos\HR_Management_App\HR_Management_App\obj\Debug\HR_Management_App.mainForm.resources
+C:\Users\Igor_\source\repos\HR_Management_App\HR_Management_App\obj\Debug\HR_Management_App.addEmployee.resources
+C:\Users\Igor_\source\repos\HR_Management_App\HR_Management_App\bin\Debug\HR_DB.mdf
+C:\Users\Igor_\source\repos\HR_Management_App\HR_Management_App\bin\Debug\HR_DB_log.ldf
+C:\Users\Igor_\source\repos\HR_Management_App\HR_Management_App\obj\Debug\HR_Management_App.updateDelete.resources
+C:\Users\Igor_\source\repos\HR_Management_App\HR_Management_App\obj\Debug\HR_Management_App.viewEmploye.resources
