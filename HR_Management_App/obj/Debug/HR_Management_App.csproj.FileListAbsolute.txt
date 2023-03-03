@@ -1,0 +1,12 @@
+C:\Users\Igor_\source\repos\HR_Management_App\HR_Management_App\bin\Debug\HR_Management_App.exe.config
+C:\Users\Igor_\source\repos\HR_Management_App\HR_Management_App\bin\Debug\HR_Management_App.exe
+C:\Users\Igor_\source\repos\HR_Management_App\HR_Management_App\bin\Debug\HR_Management_App.pdb
+C:\Users\Igor_\source\repos\HR_Management_App\HR_Management_App\obj\Debug\HR_Management_App.csproj.AssemblyReference.cache
+C:\Users\Igor_\source\repos\HR_Management_App\HR_Management_App\obj\Debug\HR_Management_App.csproj.SuggestedBindingRedirects.cache
+C:\Users\Igor_\source\repos\HR_Management_App\HR_Management_App\obj\Debug\HR_Management_App.Login.resources
+C:\Users\Igor_\source\repos\HR_Management_App\HR_Management_App\obj\Debug\HR_Management_App.Properties.Resources.resources
+C:\Users\Igor_\source\repos\HR_Management_App\HR_Management_App\obj\Debug\HR_Management_App.csproj.GenerateResource.cache
+C:\Users\Igor_\source\repos\HR_Management_App\HR_Management_App\obj\Debug\HR_Management_App.csproj.CoreCompileInputs.cache
+C:\Users\Igor_\source\repos\HR_Management_App\HR_Management_App\obj\Debug\HR_Management_App.exe
+C:\Users\Igor_\source\repos\HR_Management_App\HR_Management_App\obj\Debug\HR_Management_App.pdb
+C:\Users\Igor_\source\repos\HR_Management_App\HR_Management_App\obj\Debug\HR_Management_App.mainForm.resources
