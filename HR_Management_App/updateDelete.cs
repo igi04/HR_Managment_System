@@ -53,15 +53,19 @@ namespace HR_Management_App
         int key = 0;
         private void updateDeleteDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            key = Convert.ToInt32(updateDeleteDGV.SelectedRows[0].Cells[0].Value.ToString());
-            nameTb.Text = updateDeleteDGV.SelectedRows[0].Cells[1].Value.ToString();
-            SurnameTb.Text = updateDeleteDGV.SelectedRows[0].Cells[2].Value.ToString();
-            BirthDtp.Text = updateDeleteDGV.SelectedRows[0].Cells[3].Value.ToString();
-            TelephoneTb.Text = updateDeleteDGV.SelectedRows[0].Cells[4].Value.ToString();
-            PlaceTb.Text = updateDeleteDGV.SelectedRows[0].Cells[5].Value.ToString();
-            AddressTb.Text = updateDeleteDGV.SelectedRows[0].Cells[6].Value.ToString();
-            PositionCb.Text = updateDeleteDGV.SelectedRows[0].Cells[7].Value.ToString();
-            start_workDtp.Text = updateDeleteDGV.SelectedRows[0].Cells[8].Value.ToString();
+            if (e.RowIndex >= 0)
+            {
+            DataGridViewRow row = updateDeleteDGV.Rows[e.RowIndex];
+            key = Convert.ToInt32(row.Cells[0].Value.ToString());
+            nameTb.Text = row.Cells[1].Value.ToString();
+            SurnameTb.Text = row.Cells[2].Value.ToString();
+            BirthDtp.Text = row.Cells[3].Value.ToString();
+            TelephoneTb.Text = row.Cells[4].Value.ToString();
+            PlaceTb.Text = row.Cells[5].Value.ToString();
+            AddressTb.Text = row.Cells[6].Value.ToString();
+            PositionCb.Text = row.Cells[7].Value.ToString();
+            start_workDtp.Text = row.Cells[8].Value.ToString();
+            }
         }
 
         private void reset_tbn_Click(object sender, EventArgs e)
@@ -113,7 +117,7 @@ namespace HR_Management_App
                 try
                 {
                     conn.Open();
-                    string query = "UPDATE employee SET imie='"+nameTb.Text+"', nazwisko='"+SurnameTb.Text+"',data_uro='"+BirthDtp.Text+"', tel_number='"+TelephoneTb.Text+"', place='"+PlaceTb.Text+"', address='"+AddressTb.Text+"', position='"+PositionCb.Text+"', start_work='"+start_workDtp.Text+"' ";
+                    string query = "UPDATE employee SET imie='"+nameTb.Text+"', nazwisko='"+SurnameTb.Text+"',data_uro='"+BirthDtp.Text+"', tel_number='"+TelephoneTb.Text+"', place='"+PlaceTb.Text+"', address='"+AddressTb.Text+"', position='"+PositionCb.Text+"', start_work='"+start_workDtp.Text+"' WHERE Id='"+key+"'";
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Employee update succesfully");

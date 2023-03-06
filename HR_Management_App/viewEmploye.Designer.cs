@@ -32,14 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.employeDGV = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.hR_DBDataSet = new HR_Management_App.HR_DBDataSet();
-            this.hR_DBDataSet1 = new HR_Management_App.HR_DBDataSet1();
-            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.employeeTableAdapter = new HR_Management_App.HR_DBDataSet1TableAdapters.employeeTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nazwiskoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,11 +41,21 @@
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.startworkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hR_DBDataSet1 = new HR_Management_App.HR_DBDataSet1();
+            this.label1 = new System.Windows.Forms.Label();
+            this.searchTb = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.hR_DBDataSet = new HR_Management_App.HR_DBDataSet();
+            this.employeeTableAdapter = new HR_Management_App.HR_DBDataSet1TableAdapters.employeeTableAdapter();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeDGV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hR_DBDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hR_DBDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hR_DBDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hR_DBDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -93,71 +95,9 @@
             this.employeDGV.DataSource = this.employeeBindingSource;
             this.employeDGV.Location = new System.Drawing.Point(74, 182);
             this.employeDGV.Name = "employeDGV";
-            this.employeDGV.Size = new System.Drawing.Size(943, 435);
+            this.employeDGV.Size = new System.Drawing.Size(943, 407);
             this.employeDGV.TabIndex = 43;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.ForeColor = System.Drawing.Color.Crimson;
-            this.label1.Location = new System.Drawing.Point(391, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(298, 45);
-            this.label1.TabIndex = 44;
-            this.label1.Text = "View All Employee";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(233, 113);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(410, 35);
-            this.textBox1.TabIndex = 45;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Crimson;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(649, 109);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 39);
-            this.button1.TabIndex = 46;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Crimson;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(784, 109);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 39);
-            this.button2.TabIndex = 47;
-            this.button2.Text = "Reset";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // hR_DBDataSet
-            // 
-            this.hR_DBDataSet.DataSetName = "HR_DBDataSet";
-            this.hR_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // hR_DBDataSet1
-            // 
-            this.hR_DBDataSet1.DataSetName = "HR_DBDataSet1";
-            this.hR_DBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // employeeBindingSource
-            // 
-            this.employeeBindingSource.DataMember = "employee";
-            this.employeeBindingSource.DataSource = this.hR_DBDataSet1;
-            // 
-            // employeeTableAdapter
-            // 
-            this.employeeTableAdapter.ClearBeforeFill = true;
+            this.employeDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.employeDGV_CellContentClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -214,15 +154,105 @@
             this.startworkDataGridViewTextBoxColumn.HeaderText = "start_work";
             this.startworkDataGridViewTextBoxColumn.Name = "startworkDataGridViewTextBoxColumn";
             // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataMember = "employee";
+            this.employeeBindingSource.DataSource = this.hR_DBDataSet1;
+            // 
+            // hR_DBDataSet1
+            // 
+            this.hR_DBDataSet1.DataSetName = "HR_DBDataSet1";
+            this.hR_DBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.ForeColor = System.Drawing.Color.Crimson;
+            this.label1.Location = new System.Drawing.Point(391, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(298, 45);
+            this.label1.TabIndex = 44;
+            this.label1.Text = "View All Employee";
+            // 
+            // searchTb
+            // 
+            this.searchTb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.searchTb.Location = new System.Drawing.Point(233, 113);
+            this.searchTb.Name = "searchTb";
+            this.searchTb.Size = new System.Drawing.Size(410, 35);
+            this.searchTb.TabIndex = 45;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Crimson;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(649, 109);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(129, 39);
+            this.button1.TabIndex = 46;
+            this.button1.Text = "Search";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Crimson;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(784, 109);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(129, 39);
+            this.button2.TabIndex = 47;
+            this.button2.Text = "Reset";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // hR_DBDataSet
+            // 
+            this.hR_DBDataSet.DataSetName = "HR_DBDataSet";
+            this.hR_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // employeeTableAdapter
+            // 
+            this.employeeTableAdapter.ClearBeforeFill = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.Color.Crimson;
+            this.label2.Location = new System.Drawing.Point(229, 89);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(210, 21);
+            this.label2.TabIndex = 48;
+            this.label2.Text = "Search by telephone number";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Crimson;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(448, 595);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(207, 47);
+            this.button4.TabIndex = 49;
+            this.button4.Text = "Back";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // viewEmploye
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1079, 670);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.searchTb);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.employeDGV);
             this.Controls.Add(this.pictureBox1);
@@ -233,9 +263,9 @@
             this.Load += new System.EventHandler(this.viewEmploye_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeDGV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hR_DBDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hR_DBDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hR_DBDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hR_DBDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,7 +276,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView employeDGV;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox searchTb;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private HR_DBDataSet hR_DBDataSet;
@@ -262,5 +292,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn positionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn startworkDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button4;
     }
 }

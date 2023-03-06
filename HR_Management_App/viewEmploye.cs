@@ -47,5 +47,28 @@ namespace HR_Management_App
             this.employeeTableAdapter.Fill(this.hR_DBDataSet1.employee);
 
         }
+
+        private void employeDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            string query = "SELECT * FROM employee WHERE tel_number='" + searchTb.Text + "'";
+            SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+            var dataSet = new DataSet();
+            adapter.Fill(dataSet);
+            employeDGV.DataSource = dataSet.Tables[0];
+            conn.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            mainForm mf = new mainForm();
+            mf.Show();
+            this.Hide();
+        }
     }
 }

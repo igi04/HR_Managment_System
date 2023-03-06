@@ -51,10 +51,6 @@
             this.delete_btn = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.updateDeleteDGV = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.hR_DBDataSet = new HR_Management_App.HR_DBDataSet();
-            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.employeeTableAdapter = new HR_Management_App.HR_DBDataSetTableAdapters.employeeTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nazwiskoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,10 +60,14 @@
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.startworkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hR_DBDataSet = new HR_Management_App.HR_DBDataSet();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.employeeTableAdapter = new HR_Management_App.HR_DBDataSetTableAdapters.employeeTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.updateDeleteDGV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hR_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hR_DBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -297,8 +297,7 @@
             // updateDeleteDGV
             // 
             this.updateDeleteDGV.AutoGenerateColumns = false;
-            this.updateDeleteDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.updateDeleteDGV.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.updateDeleteDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.updateDeleteDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.updateDeleteDGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
@@ -312,12 +311,86 @@
             this.startworkDataGridViewTextBoxColumn});
             this.updateDeleteDGV.DataSource = this.employeeBindingSource;
             this.updateDeleteDGV.Location = new System.Drawing.Point(423, 68);
+            this.updateDeleteDGV.MultiSelect = false;
             this.updateDeleteDGV.Name = "updateDeleteDGV";
             this.updateDeleteDGV.RowHeadersWidth = 30;
-            this.updateDeleteDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.updateDeleteDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.updateDeleteDGV.Size = new System.Drawing.Size(632, 538);
             this.updateDeleteDGV.TabIndex = 42;
             this.updateDeleteDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.updateDeleteDGV_CellContentClick);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.Width = 67;
+            // 
+            // imieDataGridViewTextBoxColumn
+            // 
+            this.imieDataGridViewTextBoxColumn.DataPropertyName = "imie";
+            this.imieDataGridViewTextBoxColumn.HeaderText = "imie";
+            this.imieDataGridViewTextBoxColumn.Name = "imieDataGridViewTextBoxColumn";
+            this.imieDataGridViewTextBoxColumn.Width = 66;
+            // 
+            // nazwiskoDataGridViewTextBoxColumn
+            // 
+            this.nazwiskoDataGridViewTextBoxColumn.DataPropertyName = "nazwisko";
+            this.nazwiskoDataGridViewTextBoxColumn.HeaderText = "nazwisko";
+            this.nazwiskoDataGridViewTextBoxColumn.Name = "nazwiskoDataGridViewTextBoxColumn";
+            this.nazwiskoDataGridViewTextBoxColumn.Width = 67;
+            // 
+            // datauroDataGridViewTextBoxColumn
+            // 
+            this.datauroDataGridViewTextBoxColumn.DataPropertyName = "data_uro";
+            this.datauroDataGridViewTextBoxColumn.HeaderText = "data_uro";
+            this.datauroDataGridViewTextBoxColumn.Name = "datauroDataGridViewTextBoxColumn";
+            this.datauroDataGridViewTextBoxColumn.Width = 67;
+            // 
+            // telnumberDataGridViewTextBoxColumn
+            // 
+            this.telnumberDataGridViewTextBoxColumn.DataPropertyName = "tel_number";
+            this.telnumberDataGridViewTextBoxColumn.HeaderText = "tel_number";
+            this.telnumberDataGridViewTextBoxColumn.Name = "telnumberDataGridViewTextBoxColumn";
+            this.telnumberDataGridViewTextBoxColumn.Width = 66;
+            // 
+            // placeDataGridViewTextBoxColumn
+            // 
+            this.placeDataGridViewTextBoxColumn.DataPropertyName = "place";
+            this.placeDataGridViewTextBoxColumn.HeaderText = "place";
+            this.placeDataGridViewTextBoxColumn.Name = "placeDataGridViewTextBoxColumn";
+            this.placeDataGridViewTextBoxColumn.Width = 67;
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            this.addressDataGridViewTextBoxColumn.Width = 67;
+            // 
+            // positionDataGridViewTextBoxColumn
+            // 
+            this.positionDataGridViewTextBoxColumn.DataPropertyName = "position";
+            this.positionDataGridViewTextBoxColumn.HeaderText = "position";
+            this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
+            this.positionDataGridViewTextBoxColumn.Width = 66;
+            // 
+            // startworkDataGridViewTextBoxColumn
+            // 
+            this.startworkDataGridViewTextBoxColumn.DataPropertyName = "start_work";
+            this.startworkDataGridViewTextBoxColumn.HeaderText = "start_work";
+            this.startworkDataGridViewTextBoxColumn.Name = "startworkDataGridViewTextBoxColumn";
+            this.startworkDataGridViewTextBoxColumn.Width = 67;
+            // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataMember = "employee";
+            this.employeeBindingSource.DataSource = this.hR_DBDataSet;
+            // 
+            // hR_DBDataSet
+            // 
+            this.hR_DBDataSet.DataSetName = "HR_DBDataSet";
+            this.hR_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // pictureBox1
             // 
@@ -330,73 +403,9 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // hR_DBDataSet
-            // 
-            this.hR_DBDataSet.DataSetName = "HR_DBDataSet";
-            this.hR_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // employeeBindingSource
-            // 
-            this.employeeBindingSource.DataMember = "employee";
-            this.employeeBindingSource.DataSource = this.hR_DBDataSet;
-            // 
             // employeeTableAdapter
             // 
             this.employeeTableAdapter.ClearBeforeFill = true;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            // 
-            // imieDataGridViewTextBoxColumn
-            // 
-            this.imieDataGridViewTextBoxColumn.DataPropertyName = "imie";
-            this.imieDataGridViewTextBoxColumn.HeaderText = "imie";
-            this.imieDataGridViewTextBoxColumn.Name = "imieDataGridViewTextBoxColumn";
-            // 
-            // nazwiskoDataGridViewTextBoxColumn
-            // 
-            this.nazwiskoDataGridViewTextBoxColumn.DataPropertyName = "nazwisko";
-            this.nazwiskoDataGridViewTextBoxColumn.HeaderText = "nazwisko";
-            this.nazwiskoDataGridViewTextBoxColumn.Name = "nazwiskoDataGridViewTextBoxColumn";
-            // 
-            // datauroDataGridViewTextBoxColumn
-            // 
-            this.datauroDataGridViewTextBoxColumn.DataPropertyName = "data_uro";
-            this.datauroDataGridViewTextBoxColumn.HeaderText = "data_uro";
-            this.datauroDataGridViewTextBoxColumn.Name = "datauroDataGridViewTextBoxColumn";
-            // 
-            // telnumberDataGridViewTextBoxColumn
-            // 
-            this.telnumberDataGridViewTextBoxColumn.DataPropertyName = "tel_number";
-            this.telnumberDataGridViewTextBoxColumn.HeaderText = "tel_number";
-            this.telnumberDataGridViewTextBoxColumn.Name = "telnumberDataGridViewTextBoxColumn";
-            // 
-            // placeDataGridViewTextBoxColumn
-            // 
-            this.placeDataGridViewTextBoxColumn.DataPropertyName = "place";
-            this.placeDataGridViewTextBoxColumn.HeaderText = "place";
-            this.placeDataGridViewTextBoxColumn.Name = "placeDataGridViewTextBoxColumn";
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            this.addressDataGridViewTextBoxColumn.DataPropertyName = "address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = "address";
-            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            // 
-            // positionDataGridViewTextBoxColumn
-            // 
-            this.positionDataGridViewTextBoxColumn.DataPropertyName = "position";
-            this.positionDataGridViewTextBoxColumn.HeaderText = "position";
-            this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
-            // 
-            // startworkDataGridViewTextBoxColumn
-            // 
-            this.startworkDataGridViewTextBoxColumn.DataPropertyName = "start_work";
-            this.startworkDataGridViewTextBoxColumn.HeaderText = "start_work";
-            this.startworkDataGridViewTextBoxColumn.Name = "startworkDataGridViewTextBoxColumn";
             // 
             // updateDelete
             // 
@@ -433,9 +442,9 @@
             this.Text = "updateDelete";
             this.Load += new System.EventHandler(this.updateDelete_Load);
             ((System.ComponentModel.ISupportInitialize)(this.updateDeleteDGV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hR_DBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hR_DBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

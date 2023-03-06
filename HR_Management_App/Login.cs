@@ -29,7 +29,7 @@ namespace HR_Management_App
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /* 
+            
             if(loginTb.Text=="Admin" && passwordTb.Text=="Qwerty123") {
                 MessageBox.Show("Log in succesfuly");
                 mainForm mainform = new mainForm();
@@ -43,7 +43,6 @@ namespace HR_Management_App
                 loginTb.Text=string.Empty;
                 passwordTb.Text=string.Empty;
             }
-            */
         }
 
         private void passwordTb_TextChanged(object sender, EventArgs e)
